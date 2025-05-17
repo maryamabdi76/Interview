@@ -15,8 +15,8 @@ const ProductCard = (product: Props) => {
   const { addToCart } = useCartStore();
   return (
     <div className="flex flex-col gap-4 p-4 m-4 rounded bg-zinc-100 shadow-md hover:shadow-xl">
-      <h3 className="font-medium">Title: {title}</h3>
-      <p className="text-gray-700">Price: {price}</p>
+      <h3 className="font-medium">{title}</h3>
+      <p className="text-gray-700">{price}</p>
       <button
         disabled={!inStock}
         onClick={() => addToCart(product)}
